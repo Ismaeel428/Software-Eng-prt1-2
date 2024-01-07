@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Painting</name>
+    </assembly>
+    <members>
+        <member name="T:CommandParser">
+            <summary>
+            This class is responsible for parsing and executing a set of drawing commands
+            on a PictureBox control's canvas.
+            </summary>
+        </member>
+        <member name="P:CommandParser.CurrentPen">
+            <summary>
+            returns the object of currentpen
+            </summary>
+        </member>
+        <member name="P:CommandParser.CurrentPenColor">
+            <summary>
+            returns current pen color
+            </summary>
+        </member>
+        <member name="P:CommandParser.CurrentPosition">
+            <summary>
+            returns or sets currentposition of pointer
+            </summary>
+        </member>
+        <member name="M:CommandParser.#ctor(System.Windows.Forms.PictureBox,System.Action)">
+            <summary>
+            Constructor initializing the CommandParser with a PictureBox.
+            </summary>
+            <param name="pictureBox">The PictureBox control where drawings will be rendered.</param>
+            <param name="invalidateAction">The action to invalidate the PictureBox for updates.</param>
+        </member>
+        <member name="M:CommandParser.EvaluateAndAssignVariable(System.String,System.String)">
+            <summary>
+            Evaluates the given expression and assigns the result to the specified variable.
+            </summary>
+            <param name="variableName">The name of the variable to which the result will be assigned.</param>
+            <param name="expression">The expression to be evaluated.</param>
+        </member>
+        <member name="M:CommandParser.GetVariableValue(System.String)">
+            <summary>
+            Gets the value of the specified variable.
+            </summary>
+            <param name="variableName">The name of the variable whose value is to be retrieved.</param>
+            <returns>
+            The value of the specified variable. If the variable does not exist or its value cannot be determined,
+            the method returns a default value for the data type (0 for numeric types, null for reference types).
+            </returns>
+        </member>
+        <member name="M:CommandParser.ExecuteIfStatement(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Executes the provided statement if certain conditions are met.
+            </summary>
+            <param name="statement">The statement to be executed.</param>
+            <param name="insideIfStatements">A list of strings representing conditions that, if true, allow the execution of the statement.</param>
+        </member>
+        <member name="M:CommandParser.ExecuteWhileLoop(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Executes the specified statement within a while loop based on a list of inside-while conditions.
+            </summary>
+            <param name="statement">The statement to be executed within the while loop.</param>
+            <param name="insideWhile">A list of string conditions. The while loop continues executing as long as any condition in the list is true.</param>
+        </member>
+        <member name="M:CommandParser.ExecuteCommand(System.String)">
+            <summary>
+            Executes the given command by parsing the input and calling the appropriate methods.
+            </summary>
+            <param name="c">The command string to parse and execute.</param>
+        </member>
+        <member name="M:CommandParser.SetFillMode(System.String[])">
+            <summary>
+            Sets the fill mode based on the specified parameter.
+            </summary>
+            <param name="parts">Array containing the command and parameters.</param>
+        </member>
+        <member name="M:CommandParser.MoveTo(System.String[])">
+            <summary>
+            Moves the pen to a new position on the drawing area.
+            </summary>
+            <param name="parts">The x-coordinate and y-coordinates of the new position.</param>
+        </member>
+        <member name="M:CommandParser.DrawTo(System.String[])">
+            <summary>
+            Draws a line from the current position to a new specified position.
+            </summary>
+            <param name="parts">An array of strings where parts[1] is the x-coordinate and parts[2] is the y-coordinate.</param>
+        </member>
+        <member name="M:CommandParser.DrawRectangle(System.String[])">
+            <summary>
+            Draws a rectangle at the current position with the specified width and height.
+            </summary>
+            <param name="parts">An array of strings where parts[1] is the width and parts[2] is the height.</param>
+        </member>
+        <member name="M:CommandParser.DrawCircle(System.String[])">
+            <summary>
+            Draws a circle at the current position with the specified radius.
+            </summary>
+            <param name="parts">An array of strings where parts[1] is the radius.</param>
+        </member>
+        <member name="M:CommandParser.ClearDrawingArea">
+            <summary>
+            Clears the entire drawing area, resetting it to white.
+            </summary>
+        </member>
+        <member name="M:CommandParser.CheckSyntax(System.String)">
+            <summary>
+            Checks the syntax of the provided command string.
+            </summary>
+            <param name="c">The command to validate.</param>
+        </member>
+        <member name="M:CommandParser.CheckMoveAndDrawToSyntax(System.String[])">
+            <summary>
+            Validates the syntax for 'moveto' and 'drawto' commands.
+            </summary>
+            <param name="parts">Array containing the command parts to validate.</param>
+            <exception cref="T:System.FormatException">Thrown when the syntax does not match the expected format.</exception>
+        </member>
+        <member name="M:CommandParser.CheckWhile(System.String)">
+            <summary>
+            Checks the specified command and returns a string indicating whether the command is associated with a while loop.
+            </summary>
+            <param name="command">The command to be checked.</param>
+            <returns>
+            A string indicating the type of the command:
+            - "While" if the command is associated with a while loop.
+            - "NotWhile" if the command is not associated with a while loop.
+            </returns>
+        </member>
+        <member name="M:CommandParser.CheckIf(System.String)">
+            <summary>
+            Checks the specified command and returns a string indicating whether the command is associated with an if statement.
+            </summary>
+            <param name="command">The command to be checked.</param>
+            <returns>
+            A string indicating the type of the command:
+            - "If" if the command is associated with an if statement.
+            - "NotIf" if the command is not associated with an if statement.
+            </returns>
+        </member>
+        <member name="M:CommandParser.CheckRectangleSyntax(System.String[])">
+            <summary>
+            Validates the syntax for the 'rectangle' command.
+            </summary>
+            <param name="parts">Array containing the command parts to validate.</param>
+            <exception cref="T:System.FormatException">Thrown when the syntax does not match the expected format.</exception>
+        </member>
+        <member name="M:CommandParser.CheckTriangleSyntax(System.String[])">
+            <summary>
+            Checks the syntax of the provided array of string parts to determine if it represents a valid triangle.
+            </summary>
+            <param name="parts">An array of string parts representing the components of a triangle.</param>
+            <returns>
+            A string indicating the syntax check result:
+            - "Valid" if the string parts represent a valid triangle.
+            - "Invalid" if the string parts do not form a valid triangle.
+            </returns>
+        </member>
+        <member name="M:CommandParser.CheckCircleSyntax(System.String[])">
+            <summary>
+            Validates the syntax for the 'circle' command.
+            </summary>
+            <param name="parts">Array containing the command parts to validate.</param>
+            <exception cref="T:System.FormatException">Thrown when the syntax does not match the expected format.</exception>
+        </member>
+        <member name="M:CommandParser.CheckPenSyntax(System.String[])">
+            <summary>
+            Validates the syntax for the 'pen' command.
+            </summary>
+            <param name="parts">Array containing the command parts to validate.</param>
+            <exception cref="T:System.FormatException">Thrown when the syntax does not match the expected format or the color is not known.</exception>
+        </member>
+        <member name="M:CommandParser.CheckFillSyntax(System.String[])">
+            <summary>
+            Validates the syntax for the 'fill' command.
+            </summary>
+            <param name="parts">Array containing the command parts to validate.</param>
+            <exception cref="T:System.FormatException">Thrown when the syntax does not match the expected format.</exception>
+        </member>
+        <member name="M:CommandParser.OpenFile">
+            <summary>
+            Opens a file and returns a string representing the contents of the file.
+            </summary>
+            <returns>
+            A string containing the contents of the opened file. If the file cannot be opened or an error occurs, returns an empty string.
+            </returns>
+        </member>
+        <member name="M:CommandParser.OpenFile(System.String)">
+            <summary>
+            Opens a file with the specified filename and returns a string representing the contents of the file.
+            </summary>
+            <param name="filename">The name of the file to be opened.</param>
+            <returns>
+            A string containing the contents of the opened file. If the file cannot be opened or an error occurs, returns an empty string.
+            </returns>
+        </member>
+        <member name="M:CommandParser.SaveIPLFile(System.String)">
+            <summary>
+            Saves the provided content to an IPL file.
+            </summary>
+            <param name="content">The content to be saved to the IPL file.</param>
+        </member>
+        <member name="F:Painting.Form1.pbDrawingArea">
+            <summary>
+            public picturebox to show canvas
+            </summary>
+        </member>
+        <member name="M:Painting.Form1.#ctor">
+            <summary>
+            constructor to instantiate form1 and add it to list of forms
+            </summary>
+        </member>
+        <member name="M:Painting.Form1.run(System.String)">
+            <summary>
+            run the commands on all forms
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="F:Painting.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Painting.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Painting.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Painting.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Painting.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Painting.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Painting.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

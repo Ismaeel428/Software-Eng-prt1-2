@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painting", "Painting.csproj", "{78D47947-58B1-42D9-BA73-7EFFDC7516C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "..\test\test.csproj", "{7AF0566C-9F12-4045-AD7C-AA31D5CB5385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78D47947-58B1-42D9-BA73-7EFFDC7516C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D47947-58B1-42D9-BA73-7EFFDC7516C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D47947-58B1-42D9-BA73-7EFFDC7516C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D47947-58B1-42D9-BA73-7EFFDC7516C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF0566C-9F12-4045-AD7C-AA31D5CB5385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF0566C-9F12-4045-AD7C-AA31D5CB5385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF0566C-9F12-4045-AD7C-AA31D5CB5385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF0566C-9F12-4045-AD7C-AA31D5CB5385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8D2C344-3849-40A5-998A-4FB8E06958C9}
+	EndGlobalSection
+EndGlobal

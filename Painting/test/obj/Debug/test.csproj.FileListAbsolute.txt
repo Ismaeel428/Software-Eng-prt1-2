@@ -1,0 +1,44 @@
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\test.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\test.pdb
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Painting.exe
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Painting.pdb
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Painting.exe.config
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\moham\OneDrive\Desktop\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\moham\OneDrive\Desktop\Painting\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\moham\OneDrive\Desktop\Painting\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\moham\OneDrive\Desktop\Painting\test\obj\Debug\test.csproj.CopyComplete
+C:\Users\moham\OneDrive\Desktop\Painting\test\obj\Debug\test.dll
+C:\Users\moham\OneDrive\Desktop\Painting\test\obj\Debug\test.pdb
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\ss.ipl
+E:\muzz\33\computing112\Painting\test\bin\Debug\test.ipl
+E:\muzz\33\computing112\Painting\test\bin\Debug\while.ipl
+E:\muzz\33\computing112\Painting\test\bin\Debug\test.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\test.pdb
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\muzz\33\computing112\Painting\test\bin\Debug\Painting.exe
+E:\muzz\33\computing112\Painting\test\bin\Debug\Painting.pdb
+E:\muzz\33\computing112\Painting\test\bin\Debug\Painting.exe.config
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\muzz\33\computing112\Painting\test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\muzz\33\computing112\Painting\test\obj\Debug\test.csproj.AssemblyReference.cache
+E:\muzz\33\computing112\Painting\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+E:\muzz\33\computing112\Painting\test\obj\Debug\test.csproj.CopyComplete
+E:\muzz\33\computing112\Painting\test\obj\Debug\test.dll
+E:\muzz\33\computing112\Painting\test\obj\Debug\test.pdb
+E:\muzz\33\computing112\Painting\test\bin\Debug\Painting.xml
+C:\Users\Ismae\OneDrive\Desktop\Software Eng Project\Painting\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\Ismae\OneDrive\Desktop\Software Eng Project\Painting\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\Ismae\OneDrive\Desktop\Software Eng Project\Painting\test\obj\Debug\test.dll
+C:\Users\Ismae\OneDrive\Desktop\Software Eng Project\Painting\test\obj\Debug\test.pdb

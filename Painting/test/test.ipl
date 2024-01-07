@@ -1,0 +1,18 @@
+variable=5
+if variable==10
+     line 1
+     line 2
+endif
+
+Radius=20
+Width=20
+Height=20
+Count=1
+While Count<10
+     circle radius
+     Radius=Radius+10
+     Rectangle width height
+     width=width+10
+     height=height+10
+     count=count+1
+endloop

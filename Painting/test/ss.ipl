@@ -1,0 +1,9 @@
+if 10>5
+circle 50
+if 50>10
+rectangle 50 50
+endif
+if 50<10
+rectangle 500 500
+endif
+endif
